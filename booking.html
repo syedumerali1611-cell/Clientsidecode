@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>The Mayfair London | Secure Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container header-flex">
+        <div class="logo">The Mayfair <span>London</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="booking.html" class="active-nav">Book Now</a></li>
+        </ul>
+    </div>
+</header>
+
+<main>
+    <div class="hero booking-hero">
+        <div class="container">
+            <h1>Secure your London escape</h1>
+            <p>Fill in your details and we'll confirm your stay instantly</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="form-card" id="bookingSection">
+            <h2>📅 Reserve your room</h2>
+            <div id="formMessage"></div>
+            
+            <form id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="required">Full name</label>
+                        <input type="text" id="fullname" placeholder="e.g., Elizabeth Bennett">
+                        <div class="error" id="nameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Email address</label>
+                        <input type="email" id="email" placeholder="hello@example.com">
+                        <div class="error" id="emailError"></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="required">Check-in date</label>
+                        <input type="date" id="checkin">
+                        <div class="error" id="checkinError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Check-out date</label>
+                        <input type="date" id="checkout">
+                        <div class="error" id="checkoutError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="required">Guests</label>
+                        <input type="number" id="guests" min="1" max="6" value="2">
+                        <div class="error" id="guestsError"></div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="required">Room type</label>
+                        <select id="roomSelect">
+                            <option value="">-- Select your room --</option>
+                            <option value="classic">Classic Double - £219/night</option>
+                            <option value="deluxe">Deluxe King Suite - £289/night</option>
+                            <option value="terrace">Mayfair Terrace Suite - £429/night</option>
+                            <option value="royal">Royal Mayfair Suite - £799/night</option>
+                        </select>
+                        <div class="error" id="roomError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Special requests (optional)</label>
+                        <textarea id="requests" rows="2" placeholder="Accessibility needs, extra pillows, celebration requests..."></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">✨ Confirm reservation</button>
+            </form>
+
+            <p class="secure-note">🔒 Your data is safe. We never share your information.</p>
+        </div>
+
+        <div class="contact-info">
+            <p>Need help? Call our concierge: <strong>+44 20 7946 0138</strong> or chat with us live.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>📍 47 Grosvenor Square, Mayfair, London W1K 2HP | ✉ reservations@mayfairlondon.com | 📞 +44 20 7946 0138</p>
+        <p class="footer-copy">© 2025 The Mayfair London — Timeless British hospitality</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
